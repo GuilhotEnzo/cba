@@ -5,6 +5,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Accueil</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            display: flex;
+            flex-direction: row;
+        }
+        main {
+            flex: 1;
+            margin-right: 200px; /* Espace pour l'aside */
+        }
+        aside {
+            position: fixed;
+            right: 10px;
+            top: 100px; /* Position après le header */
+            width: 280px;
+            background-color: #f9f9f9;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            padding: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        aside img {
+            width: 100%;
+            border-radius: 4px;
+        }
+        aside p {
+            font-size: 0.9rem;
+            color: #555;
+            text-align: center;
+        }
+    </style>
 </head>
 <body>
 <header>
@@ -70,6 +100,11 @@
         </article>
     </section>
 </main>
+
+<aside>
+    <img src="images/enzo.png" alt="Publicité imaginaire">
+    <p>image alt</p>
+</aside>
 
 <footer>
     <p>&copy; 2024 Site des pingouins. Tous droits réservés.</p>
